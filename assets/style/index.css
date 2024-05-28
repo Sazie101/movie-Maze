@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", "Nunito Sans", Arial, sans-serif;
+    background-color: #11121a;
+    color: #fff;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searching {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.searchBar {
+    border-radius: 5px;
+    width: 450px;
+    height: 45px;
+    margin-right: 7px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.searchBtn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #3b3bff;
+    color: #fff;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+    background-color: #2727ff;
+}
+
+.movie {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.movieImg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.moviePoster {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.movieInfo {
+    flex: 2;
+    padding: 10px;
+    text-align: left;
+}
+
+.movieTitle {
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+.movieDate {
+    font-size: 27px;
+    color: #666;
+}
+
+.moviePlot {
+    margin: 30px 0;
+}
+
+.autocomplete-suggestions {
+    position: absolute;
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 50px;
+    color: #000;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.autocomplete-suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: #e9e9e9;
+}
